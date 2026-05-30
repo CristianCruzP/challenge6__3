@@ -1,0 +1,2 @@
+model,anomaly_rate,seed
+IsolationForest,0.05000166672222407,7

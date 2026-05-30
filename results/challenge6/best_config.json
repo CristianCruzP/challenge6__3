@@ -1,0 +1,20 @@
+{
+  "seed": 7,
+  "latent_dim": 8,
+  "beta": 0.5,
+  "device": "cpu",
+  "random_seeds": [
+    7,
+    42,
+    1337
+  ],
+  "latent_dims": [
+    8,
+    16
+  ],
+  "betas": [
+    0.5,
+    1.0,
+    4.0
+  ]
+}
