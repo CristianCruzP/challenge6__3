@@ -22,20 +22,21 @@
 - Main script: `src/pipeline.py`
 
 ## Fill after running the pipeline
-- AE latent dimension:
-- VAE latent dimension:
-- VAE beta:
-- AE anomaly threshold:
-- VAE anomaly threshold:
-- Isolation Forest threshold:
-- AE anomaly rate:
-- VAE anomaly rate:
-- Isolation Forest anomaly rate:
-- Spearman correlation AE vs Isolation Forest:
-- Spearman correlation VAE vs Isolation Forest:
-- Silhouette score in raw space:
-- Silhouette score in AE latent space:
-- Silhouette score in VAE latent space:
+- Best seed: 7
+- AE latent dimension: 8
+- VAE latent dimension: 8
+- VAE beta: 0.5
+- AE anomaly threshold: 0.0861
+- VAE anomaly threshold: 0.6387
+- Isolation Forest threshold: 0.5171
+- AE anomaly rate: 0.0500
+- VAE anomaly rate: 0.0500
+- Isolation Forest anomaly rate: 0.0500
+- Spearman correlation AE vs Isolation Forest: 0.7443
+- Spearman correlation VAE vs Isolation Forest: 0.7266
+- Silhouette score in raw space: 0.1433
+- Silhouette score in AE latent space: 0.1871
+- Silhouette score in VAE latent space: 0.2314
 
 ## Short synthesis
-- What Challenge 6 adds beyond Challenges 2 and 5 will be written here after the pipeline results are finalized.
+- Challenge 6 adds AE, VAE and Isolation Forest anomaly detection on the Challenge 5 processed matrix, plus t-SNE/UMAP views of the learned embeddings. The best run used seed 7 with latent dimension 8 and VAE beta 0.5; the latent spaces show better alignment with the Challenge 5 K-Means structure than the raw space, and the anomaly scores are strongly correlated with Isolation Forest.
